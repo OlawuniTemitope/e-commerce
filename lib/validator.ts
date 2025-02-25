@@ -63,7 +63,7 @@ export const ProductInputSchema = z.object({
 })
 
 export const ProductUpdateSchema = ProductInputSchema.extend({
-  _id: z.string(),
+  _id: z.string().optional(),
 })
 
 // Order Item
@@ -208,7 +208,7 @@ export const WebPageInputSchema = z.object({
 })
 
 export const WebPageUpdateSchema = WebPageInputSchema.extend({
-  _id: z.string(),
+  _id: z.string().optional(),
 })
 
 // Setting
